@@ -16,7 +16,7 @@ public class CustomerMapper {
         return mapper.map(customerEntity, CustomerDto.class);
     }
 
-    public static CustomerEntity toEntity(CustomerDto customerDto){
+    public static CustomerEntity convertToEntity(CustomerDto customerDto){
         return mapper.map(customerDto, CustomerEntity.class);
     }
 }

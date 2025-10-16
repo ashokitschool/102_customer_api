@@ -12,4 +12,5 @@ public class ShippingAddrDto {
     private String state;
     private String zipCode;
     private String addrType;
+    private String deleteSw;
 }
