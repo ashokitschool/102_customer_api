@@ -4,7 +4,7 @@ import in.ashokit.entity.CustomerEntity;
 import in.ashokit.entity.ShippingAddressEntity;
 import org.springframework.data.jpa.repository.JpaRepository;
 
-public interface CustomerRepository extends JpaRepository<CustomerEntity, Long> {
+public interface CustomerRepository extends JpaRepository<CustomerEntity, Integer> {
 
     public CustomerEntity findByEmailAndPwd(String email, String pwd);
 

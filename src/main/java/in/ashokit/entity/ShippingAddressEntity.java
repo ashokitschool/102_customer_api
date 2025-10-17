@@ -5,14 +5,14 @@ import lombok.Getter;
 import lombok.Setter;
 
 @Entity
-@Table(name="shipping_addr")
+@Table(name = "shipping_addr")
 @Setter
 @Getter
 public class ShippingAddressEntity {
 
     @Id
     @GeneratedValue(strategy = GenerationType.IDENTITY)
-    private Long addrId;
+    private Integer addrId;
     private String hno;
     private String street;
     private String city;
@@ -21,9 +21,8 @@ public class ShippingAddressEntity {
     private String addrType;
     private String deleteSw;
 
-
     @ManyToOne
-    @JoinColumn(name="customer_id")
+    @JoinColumn(name = "customer_id")
     private CustomerEntity customer;
 
 }

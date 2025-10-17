@@ -5,7 +5,7 @@ import lombok.Data;
 @Data
 public class ShippingAddrDto {
 
-    private Long addrId;
+    private Integer addrId;
     private String hno;
     private String street;
     private String city;

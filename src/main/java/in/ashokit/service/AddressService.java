@@ -8,11 +8,9 @@ public interface AddressService {
 
     public ShippingAddrDto saveAddress(ShippingAddrDto addrDto, Integer customerId);
 
-    public ShippingAddrDto getAddress(Integer addId);
-
-    public ShippingAddrDto updateAddress(ShippingAddrDto addrDto);
+    public ShippingAddrDto getAddress(Integer addrId);
 
     public List<ShippingAddrDto> getCustomerAddresses(Integer customerId);
 
-    public boolean deleteAddress(Integer addId);
+    public boolean deleteAddress(Integer addrId);
 }
