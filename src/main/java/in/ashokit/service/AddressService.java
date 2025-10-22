@@ -13,4 +13,5 @@ public interface AddressService {
     public List<ShippingAddrDto> getCustomerAddresses(Integer customerId);
 
     public boolean deleteAddress(Integer addrId);
+
 }
