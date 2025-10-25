@@ -9,14 +9,13 @@ import org.springframework.stereotype.Component;
 @Component
 public class CustomerMapper {
 
-    @Autowired
-   private static ModelMapper mapper;
+    private static ModelMapper mapper = new ModelMapper();
 
-    public static CustomerDto convertToDto(CustomerEntity customerEntity){
+    public static CustomerDto convertToDto(CustomerEntity customerEntity) {
         return mapper.map(customerEntity, CustomerDto.class);
     }
 
-    public static CustomerEntity convertToEntity(CustomerDto customerDto){
+    public static CustomerEntity convertToEntity(CustomerDto customerDto) {
         return mapper.map(customerDto, CustomerEntity.class);
     }
 }

@@ -12,14 +12,14 @@ import org.springframework.stereotype.Component;
 @Component
 public class ShippingAddrMapper {
 
-    @Autowired
-    private static ModelMapper mapper;
+    private static ModelMapper mapper = new ModelMapper();
 
-    public static ShippingAddrDto convertToDto(ShippingAddressEntity addrEntity){
+
+    public static ShippingAddrDto convertToDto(ShippingAddressEntity addrEntity) {
         return mapper.map(addrEntity, ShippingAddrDto.class);
     }
 
-    public static ShippingAddressEntity toEntity(ShippingAddrDto addrDto){
+    public static ShippingAddressEntity toEntity(ShippingAddrDto addrDto) {
         return mapper.map(addrDto, ShippingAddressEntity.class);
     }
 }

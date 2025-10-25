@@ -6,7 +6,7 @@ import org.springframework.data.jpa.repository.JpaRepository;
 
 public interface CustomerRepository extends JpaRepository<CustomerEntity, Integer> {
 
-    public CustomerEntity findByEmailAndPwd(String email, String pwd);
+    public CustomerEntity findByEmailAndPassword(String email, String pwd);
 
     public CustomerEntity findByEmail(String email);
 

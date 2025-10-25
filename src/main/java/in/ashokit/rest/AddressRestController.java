@@ -4,7 +4,6 @@ import in.ashokit.dto.ShippingAddrDto;
 import in.ashokit.response.ApiResponse;
 import in.ashokit.service.AddressService;
 import lombok.AllArgsConstructor;
-import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.http.HttpStatus;
 import org.springframework.http.ResponseEntity;
 import org.springframework.web.bind.annotation.*;
